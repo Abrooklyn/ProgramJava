@@ -48,7 +48,7 @@ public class Main {
 
         System.out.println("j'ai enfin réussi à avoir " + stuff[1] + ". Je continue les donjons, prochaine étape : " + stuff[0]);
 
-        // pseudo et moyenne d'ILevel dans la guilde
+        // pseudos dans la guilde
 
         String[] namesGuild = new String[]{
                 "DreanChetbou",
