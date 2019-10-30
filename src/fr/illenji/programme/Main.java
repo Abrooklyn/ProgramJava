@@ -11,6 +11,9 @@ public class Main {
         int iLevel = 415;
         int level = 120;
         int age = 25;
+        int money = 850;
+        int priceArmor = 800;
+        boolean hasArmor = false;
         boolean femme = true;
         String sexe;
         if (femme = true) {
@@ -76,5 +79,22 @@ public class Main {
                 System.out.println("Boom !");
             }
         }
+
+        sendMessage("test"); // test
+        sendMessage("Murlock"); // test Murlock
+        sendMessage("Il vous restera : " + getResultat(money, priceArmor, hasArmor));
+    }
+
+    private static void sendMessage(String message){
+    System.out.println("ceci est un message dans la console : " + message);
+    }
+
+    private static int getResultat(int money, int priceArmor, boolean hasArmor){
+        if(money >= priceArmor && !hasArmor){
+            System.out.println("tu peut acheter cette Armure");
+        } else {
+            System.out.println("tu n'as pas assez de PO pour acheter cette armure");
+        }
+        return money - priceArmor;
     }
 }
