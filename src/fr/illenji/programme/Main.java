@@ -69,5 +69,12 @@ public class Main {
         };
 
         System.out.println(guildLevel[2][1]+ "<--");
+
+        for(int i = 10; i >= 0; i--){
+                System.out.println("Compte à rebours, déclanchement dans " + i);
+            if(i == 0){
+                System.out.println("Boom !");
+            }
+        }
     }
 }
