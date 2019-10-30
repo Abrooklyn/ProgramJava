@@ -50,15 +50,9 @@ public class Main {
 
         // pseudos dans la guilde
 
-        String[] namesGuild = new String[]{
-                "DreanChetbou",
-                "Nosnix",
-                "Larkay",
-                "Gunnar",
-                "NeaEky",
-                "Chetvi",
-                "Merwil",
-        };
+        String namesGuild = "DreanChetbou,Nosnix,Larkay,Gunnar,NeaEky,Chetvi,Merwil";
+        String[] pseudos = namesGuild.split(",");
+        System.out.println(pseudos[2]);
 
         // chercher le deuxieme Ilevel du troisieme tableau
 
